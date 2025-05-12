@@ -11,7 +11,7 @@ Nous avons donc 3 entités distinctes:
     Cette entité contient un attribut userid (qui est la primary key) ainsi que les attributs nom, prenom et email (qui sont des chaîne de caractères)
 
 - Materiel
-    Cette entité contient un attribut materialid (qui est la primary key) ainsi que l'attribut nom (pour l'instant seul, qui est une chaîne de caractères)
+    Cette entité contient un attribut materialid (qui est la primary key) ainsi que l'attribut nom (qui est une chaîne de caractères) et l'attribut quantité (qui est un entier)
 
 - Reservation
     Cette entité contient un attribut reservationid (qui est la primary key) ainsi que les attributs date début et date de fin (qui sont des horodates)

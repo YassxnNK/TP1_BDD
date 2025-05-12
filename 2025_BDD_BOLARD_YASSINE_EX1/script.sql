@@ -8,7 +8,8 @@ CREATE TABLE Utilisateur(
 
 CREATE TABLE Materiel(
    materialid SERIAL,
-   nom VARCHAR(50)  NOT NULL,
+   nombre_emprunt INTEGER NOT NULL,
+   quantite INTEGER,
    PRIMARY KEY(materialid)
 );
 

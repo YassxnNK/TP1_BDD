@@ -13,6 +13,7 @@ Cette requête nous sort le nom et prénom de tous les utilisateurs ayant effect
 SELECT m.nom FROM materiel AS m 
 INNER JOIN reservation AS r ON m.materialid=r.materialid
 INNER JOIN utilisateur as u ON u.userid=r.userid
+-- Double INNER JOIN car on devra chercher les informations dans la table utilisateur
 WHERE u.nom='Bolard' AND u.prenom='Yassine';
 ```
 

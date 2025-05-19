@@ -52,8 +52,42 @@ CREATE TABLE Reservation(
 );
 ```
 
+Pour compléter la table utilisateur la requête ci dessous a été utilisé :
+```sql
+INSERT INTO utilisateur (nom, prenom, email)
+VALUES ('Bolard', 'Yassine', 'yassine.bolard@gmail.com'),
+('Parat', 'Eliot', 'eliot.parat@gmail.com'),
+('Herzi', 'Anes', 'anes.herzi@gmail.com'),
+('Manso', 'Alexis', 'alexis.manso@gmail.com'),
+('Jordan', 'Michael', 'michael.jordan@gmail.com'),
+('Monstre', 'Double', 'guacamole@gmail.com'),
+('Frisé', 'Patate', 'patate@gmail.com'),
+('Drucker', 'Michel', 'cafe@gmail.com'),
+('Quartararo', 'Fabio', 'quartararo@gmail.com'),
+('Zarco', 'Johan', 'johan.zarco@gmail.com');
+```
+
 Pour compléter la table matériel la requête ci dessous a été utilisé avec uniquement besoin de remplacer ce qu'il y a entre les guillemets "":
 ```sql
-INSERT INTO materiel (nom, prenom, email)
-VALUES ("Nom", "Prénom", "Email");
+INSERT INTO materiel (nom, quantite) VALUES
+('Ordinateur portable', 5),
+('Vidéo-projecteur', 3),
+('Tableau blanc', 2),
+('Câble HDMI', 10),
+('Multiprise', 7),
+('Microphone', 4),
+('Casque audio', 6),
+('Caméra web', 3),
+('Pointeur laser', 8),
+('Station de charge', 2);
+```
+
+Pour compléter la table réservation la requête ci dessous a été utilisé avec uniquement besoin de remplacer ce qu'il y a entre les guillemets "" et quantite (dans VALUES) par un entier:
+```sql
+INSERT INTO Reservation (date_debut, date_fin, materialid, userid) VALUES
+('2025-05-20 09:00:00', '2025-05-20 12:00:00', 3, 7),
+('2025-05-21 14:00:00', '2025-05-21 16:30:00', 5, 2),
+('2025-05-22 08:30:00', '2025-05-22 10:00:00', 1, 9),
+('2025-05-23 13:00:00', '2025-05-23 17:00:00', 8, 4),
+('2025-05-24 10:00:00', '2025-05-24 11:00:00', 6, 1);
 ```

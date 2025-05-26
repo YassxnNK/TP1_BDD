@@ -1,29 +1,11 @@
-INSERT INTO materiel (nom, quantite)
-VALUES ('fer à souder');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('livre toeic');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('ordinateur');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('rubikub');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('stylo');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('souris');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('clavier');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('tapis de souris');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('sac');
-
-INSERT INTO materiel (nom, quantite)
-VALUES ('boite en carton');
+INSERT INTO materiel (nom, quantite) VALUES
+('Ordinateur portable', 5),
+('Vidéo-projecteur', 3),
+('Tableau blanc', 2),
+('Câble HDMI', 10),
+('Multiprise', 7),
+('Microphone', 4),
+('Casque audio', 6),
+('Caméra web', 3),
+('Pointeur laser', 8),
+('Station de charge', 2);

@@ -30,6 +30,7 @@ CREATE TABLE Utilisateur(
    nom VARCHAR(50)  NOT NULL,
    prenom VARCHAR(50)  NOT NULL,
    email VARCHAR(60)  NOT NULL,
+   numetudiant VARCHAR(8) NOT NULL,
    PRIMARY KEY(userid)
 );
 
@@ -54,17 +55,17 @@ CREATE TABLE Reservation(
 
 Pour compléter la table utilisateur la requête ci dessous a été utilisé :
 ```sql
-INSERT INTO utilisateur (nom, prenom, email)
-VALUES ('Bolard', 'Yassine', 'yassine.bolard@gmail.com'),
-('Parat', 'Eliot', 'eliot.parat@gmail.com'),
-('Herzi', 'Anes', 'anes.herzi@gmail.com'),
-('Manso', 'Alexis', 'alexis.manso@gmail.com'),
-('Jordan', 'Michael', 'michael.jordan@gmail.com'),
-('Monstre', 'Double', 'guacamole@gmail.com'),
-('Frisé', 'Patate', 'patate@gmail.com'),
-('Drucker', 'Michel', 'cafe@gmail.com'),
-('Quartararo', 'Fabio', 'quartararo@gmail.com'),
-('Zarco', 'Johan', 'johan.zarco@gmail.com');
+INSERT INTO Utilisateur (nom, prenom, email, numetudiant) VALUES
+('Dupont', 'Jean', 'jean.dupont@example.com', '20250001'),
+('Martin', 'Claire', 'claire.martin@example.com', '20250002'),
+('Nguyen', 'Linh', 'linh.nguyen@example.com', '20250003'),
+('Moreau', 'Lucas', 'lucas.moreau@example.com', '20250004'),
+('Petit', 'Sophie', 'sophie.petit@example.com', '20250005'),
+('Lemoine', 'Karim', 'karim.lemoine@example.com', '20250006'),
+('Robert', 'Inès', 'ines.robert@example.com', '20250007'),
+('Fournier', 'Tom', 'tom.fournier@example.com', '20250008'),
+('Garcia', 'Laura', 'laura.garcia@example.com', '20250009'),
+('Bernard', 'Nicolas', 'nicolas.bernard@example.com', '20250010');
 ```
 
 Pour compléter la table matériel la requête ci dessous a été utilisé avec uniquement besoin de remplacer ce qu'il y a entre les guillemets "":
